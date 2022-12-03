@@ -16,7 +16,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <link href="css/site.css" rel="stylesheet" />
+    <link href="/js/css/site.css" rel="stylesheet" />
 
     <!-- Convert this to an external style sheet -->
     <style>
@@ -74,7 +74,7 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
-              src="https://www.dropbox.com/s/25lk5ur2qvxms7o/AppLandingPage.png?raw=1"
+              src="/js/img/ToDoList (2).png"
               class="d-block mx-lg-auto img-fluid"
               alt="Bootstrap Themes"
               width="700"
@@ -91,9 +91,18 @@
               and produces real results.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-warning btn-lg px-4 me-md-2">
-                Demo
+              <button
+                type="button"
+                onclick="addTask()"
+                class="btn btn-warning btn-lg px-4 me-md-2"
+              >
+                Add a Task
               </button>
+            </div>
+            <div class="taskContainer off-bottom" id="taskItems">
+              <div class="scrollbox">
+                <ul id="list" class="list list-group"></ul>
+              </div>
             </div>
           </div>
         </div>
@@ -105,7 +114,7 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    <script src="js/site.js"></script>
+    <script src="/js/site.js"></script>
   </body>
 </html>
 
